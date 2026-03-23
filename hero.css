@@ -9,11 +9,11 @@ body {
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #dddddd;
-  padding: 0.75rem 1rem; /* space inside the header */
-  display: flex; /* puts site and nav side by side */
+  padding: 0.75rem 1rem;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem; /* space between flex items */
+  gap: 1rem;
 }
 
 header h1 {
@@ -23,103 +23,74 @@ header h1 {
 }
 
 nav ul {
-  list-style: none; /* removes bullet points */
-  display: flex; /* puts list items in a row */
-  gap: 1.5rem; /* space between links */
-  flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 nav a {
-  text-decoration: none; /* removes link underlines*/
+  text-decoration: none;
   color: #1d3557;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #457b9d; /* color when hovering */
+  color: #457b9d;
 }
-
 
 
 /* HERO SECTION
    ========================= */
 
 .hero {
-  min-height: 25vh; /* sets height of hero image */
-  padding: 1.5rem; /* adds space inside the hero area */
-
-  /* background-image is layering TWO backgrounds:
+    /* background-image is layering TWO backgrounds:
      1. A dark transparent gradient
      2. The actual photo
      The dark gradient helps make the white text easier to read. */
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("images/cats.jpg");
-
-  background-size: cover; /* makes image fill the hero area */
-  background-position: center; /* keeps the image centered */
-  background-repeat: no-repeat;
-
-  /* Flexbox is used here to center the content box */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.4;
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+    url("");
+  
 }
 
 .hero-content {
-  max-width: 700px; /* limits width of hero text */
-  text-align: center; /* centers the text inside hero */
-  color: #ffffff; /* hero text color */
+  text-align: center;
+  color: white;
 }
 
 .hero-content h2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+
 }
 
 .hero-content p {
-  font-size: 1.15rem;
-  margin-bottom: 1.5rem;
+
 }
 
 .hero-button {
-  display: inline-block;
-  background-color: #e63946;
-  color: #ffffff;
-  text-decoration: none; /* removes link underline */
-  font-weight: bold;
-  padding: 0.9rem 1.4rem; /* space inside button */
-  border-radius: 0.75rem; /* rounds corners */
-}
 
-.hero-button:hover {
-  background-color: #c92f3b; /* color when hovering */
 }
-
 
 
 /* MAIN CONTENT SECTION
    ========================= */
-
 .content-section {
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto; /* centers horizontally */
+  margin: 0 auto;
   padding: 2rem 0;
-  line-height: 1.4;
   font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 .content-section h2 {
   font-size: 2rem;
   color: #1d3557;
+  margin-bottom: 0.75rem;
 }
 
 .content-section p {
   margin-bottom: 1rem;
 }
-
 
 
 /* FOOTER
@@ -138,32 +109,24 @@ footer p {
 }
 
 
-
 /* RESPONSIVE STYLES
    ========================= */
 
 @media (max-width: 480px) {
   header {
-    flex-direction: column; /* stacks header on small screens */
+    flex-direction: column;
     align-items: center;
   }
 
   .hero {
-    /* Makes the hero a little shorter on smaller screens */
-    min-height: 15vh;
-    padding: 1.5rem;
+    
   }
 
   .hero-content h2 {
-    /* Reduces heading size for smaller screens */
-    font-size: 2.2rem;
+    
   }
 
   .hero-content p {
-    font-size: 1rem;
-  }
-
-  .content-section h2 {
-    font-size: 1.6rem;
+    
   }
 }
